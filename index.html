@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REDLINE | Exclusive Supercars</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="#" class="logo">
+      <!-- Native SVG Speedometer Icon -->
+      <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
+        <path d="M12 12l4-4" stroke="#ff1e27" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      RED<span>LINE</span>
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#showroom">Showroom</a></li>
+        <li><a href="#specs">Specs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="btn-red" id="book-drive-btn">Book Drive</button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <span class="hero-tag">Pure Performance</span>
+      <h1 class="hero-title">PRECISION IN <span>MOTION.</span></h1>
+      <p class="hero-desc">
+        Experience the pinnacle of automotive engineering. Custom color configurations, instant availability, and nationwide delivery.
+      </p>
+      <button class="btn-red" id="explore-btn">Configure Vehicle</button>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <h3>637 HP</h3>
+          <p>Peak Power</p>
+        </div>
+        <div class="stat-item">
+          <h3>2.9s</h3>
+          <p>0-60 MPH</p>
+        </div>
+        <div class="stat-item">
+          <h3>100%</h3>
+          <p>Electric</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE SHOWROOM SECTION -->
+  <section class="showroom-section" id="showroom">
+    <h2 class="section-title">Interactive Showroom</h2>
+    <p class="section-subtitle">Select color variants and switch angles in real-time</p>
+
+    <div class="showroom-card">
+      <!-- Left: Vehicle Display (Pure SVG Visualizer) -->
+      <div class="vehicle-display">
+        <div class="main-image-container" id="car-svg-container">
+          <!-- Interactive SVG car render will be injected by script.js -->
+        </div>
+
+        <!-- Angle Buttons -->
+        <div class="angle-thumbnails">
+          <button class="thumb-btn active" data-angle="front">Front View</button>
+          <button class="thumb-btn" data-angle="side">Side View</button>
+          <button class="thumb-btn" data-angle="rear">Rear View</button>
+        </div>
+      </div>
+
+      <!-- Right: Vehicle Details & Controls -->
+      <div class="vehicle-details" id="specs">
+        <span class="badge">In Stock • 2026 Edition</span>
+        <h2>Redline GT Coupe</h2>
+        <div class="price-tag">$104,900</div>
+
+        <!-- Color Swatches -->
+        <div class="color-section-title">
+          Selected Paint: <strong id="color-name-display">Supersonic Red</strong>
+        </div>
+        <div class="color-swatches">
+          <div class="color-dot active" data-color="red" data-hex="#ff1e27" data-name="Supersonic Red" style="background-color: #ff1e27;"></div>
+          <div class="color-dot" data-color="black" data-hex="#111111" data-name="Mythos Black" style="background-color: #111111;"></div>
+          <div class="color-dot" data-color="white" data-hex="#f8f9fa" data-name="Ibis White" style="background-color: #f8f9fa;"></div>
+        </div>
+
+        <!-- Specs Grid -->
+        <div class="specs-grid">
+          <div class="spec-box">
+            <span>Drivetrain</span>
+            <strong>Dual-Motor AWD</strong>
+          </div>
+          <div class="spec-box">
+            <span>Range</span>
+            <strong>249 Miles</strong>
+          </div>
+          <div class="spec-box">
+            <span>Acceleration</span>
+            <strong>0-60 in 2.9s</strong>
+          </div>
+          <div class="spec-box">
+            <span>Transmission</span>
+            <strong>2-Speed Auto</strong>
+          </div>
+        </div>
+
+        <button class="btn-red" id="reserve-btn" style="width: 100%; padding: 15px;">
+          Reserve Vehicle
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
+            <path d="M12 12l4-4" stroke="#ff1e27" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          RED<span>LINE</span>
+        </a>
+        <p>The premier luxury vehicle marketplace. Engineering passion meets world-class customer experience.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Models</h4>
+        <ul>
+          <li><a href="#">Supercars</a></li>
+          <li><a href="#">Luxury SUVs</a></li>
+          <li><a href="#">Electric Performance</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Redline</a></li>
+          <li><a href="#">Showrooms</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Financing</a></li>
+          <li><a href="#">Warranty</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 REDLINE Automotive Inc. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Message Notification</div>
+
+  <!-- External Script -->
+  <script src="index.js"></script>
+</body>
+</html>
