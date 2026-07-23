@@ -550,6 +550,118 @@ textarea.form-control {
   min-height: 140px;
 }
 
+/* ==========================================================================
+   7. ABOUT US & SHARED SUB-PAGE STYLES
+   ========================================================================== */
+
+/* Fix: Perfectly centers the text in the Hero for About & Contact pages */
+.centered-hero {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* About Section Layout Fixes */
+.about-section {
+  padding: 120px 5%;
+  background-color: var(--bg-black);
+  position: relative;
+  z-index: 5; /* Ensures it sits properly above the video background */
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-story {
+  text-align: center;
+  margin-bottom: 80px;
+  padding: 0 20px;
+}
+
+.about-story .section-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: var(--text-white);
+}
+
+.about-text {
+  color: var(--text-gray);
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Values Grid Layout */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px; /* Increased gap for better breathing room */
+}
+
+.value-card {
+  background: var(--card-black);
+  padding: 50px 30px; /* Made the cards slightly taller */
+  border-radius: 12px;
+  border: 1px solid var(--border-dark);
+  text-align: center;
+  transition: var(--transition-smooth);
+}
+
+.value-card:hover {
+  border-color: var(--brand-red);
+  transform: translateY(-8px); /* Slightly stronger hover bounce */
+  box-shadow: 0 15px 30px rgba(255, 30, 39, 0.15);
+}
+
+.value-icon {
+  font-size: 45px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.value-card h3 {
+  color: var(--text-white);
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.value-card p {
+  color: var(--text-gray);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Responsive fix for Mobile */
+@media (max-width: 992px) {
+  .values-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-story .section-title {
+    font-size: 28px;
+  }
+  .about-text {
+    font-size: 16px;
+  }
+}
+
 /* Responsive Styles */
 @media (max-width: 992px) {
   .hero { flex-direction: column; text-align: center; }

@@ -5,24 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact REDLINE | Get in Touch</title>
   
-  <!-- Make sure this links to your existing CSS file -->
-  <link rel="stylesheet" href="contact-us.css">
+  <!-- Linking to your newly named CSS file -->
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-  <!-- This dynamically loads your Header from index.js -->
+  <!-- Web Component Header (Loaded from index.js) -->
   <site-header></site-header>
 
-  <!-- CONTACT HERO SECTION WITH VIDEO -->
+  <!-- HERO SECTION -->
   <section class="hero contact-hero">
-    <!-- Background Video -->
     <video autoplay loop muted playsinline class="hero-video">
-      <source src="videos/hero-video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
+      <source src="videos/contact-us-hero.mp4" type="video/mp4">
     </video>
     <div class="hero-overlay"></div>
 
-    <div class="hero-content" style="text-align: center; margin: 0 auto; max-width: 800px;">
+    <div class="hero-content centered-hero">
       <span class="hero-tag">We are here for you</span>
       <h1 class="hero-title">GET IN <span>TOUCH.</span></h1>
       <p class="hero-desc">
@@ -35,33 +33,33 @@
   <section class="contact-section">
     <div class="contact-grid">
       
-      <!-- Left Side: Contact Information -->
+      <!-- Left Side: Information -->
       <div class="contact-info">
         <h3>Showroom Details</h3>
-        <p style="color: var(--text-gray); margin-bottom: 30px;">Visit our flagship location or reach out digitally. We deliver performance directly to your doorstep.</p>
+        <p class="contact-subtitle">Visit our flagship location or reach out digitally. We deliver performance directly to your doorstep.</p>
         
         <div class="info-item">
-          <strong><span style="color: var(--brand-red);">📍</span> Address</strong>
+          <strong><span class="icon-red">📍</span> Address</strong>
           <p>1280 Performance Blvd<br>Los Angeles, CA 90028</p>
         </div>
         
         <div class="info-item">
-          <strong><span style="color: var(--brand-red);">📞</span> Phone</strong>
+          <strong><span class="icon-red">📞</span> Phone</strong>
           <p>+1 (800) RED-LINE</p>
         </div>
         
         <div class="info-item">
-          <strong><span style="color: var(--brand-red);">✉️</span> Email</strong>
+          <strong><span class="icon-red">✉️</span> Email</strong>
           <p>concierge@redline.com</p>
         </div>
 
         <div class="info-item">
-          <strong><span style="color: var(--brand-red);">🕒</span> Hours</strong>
+          <strong><span class="icon-red">🕒</span> Hours</strong>
           <p>Mon-Fri: 9:00 AM - 8:00 PM<br>Sat-Sun: By Appointment Only</p>
         </div>
       </div>
 
-      <!-- Right Side: The Form -->
+      <!-- Right Side: Form -->
       <div class="contact-form-wrapper">
         <h3>Send a Message</h3>
         <form id="contact-form">
@@ -77,20 +75,20 @@
           <div class="form-group">
             <textarea class="form-control" placeholder="How can we assist you?" required></textarea>
           </div>
-          <button type="submit" class="btn-red" style="width: 100%; padding: 15px;">Send Message</button>
+          <button type="submit" class="btn-red btn-full">Send Message</button>
         </form>
       </div>
 
     </div>
   </section>
 
-  <!-- This dynamically loads your Footer from index.js -->
+  <!-- Web Component Footer (Loaded from index.js) -->
   <site-footer></site-footer>
 
-  <!-- Toast Notification (Required for the JS popup to work) -->
+  <!-- Toast Notification -->
   <div class="toast" id="toast">Message Notification</div>
 
-  <!-- Single JavaScript File (Handles Header, Footer, and Form Submission) -->
-  <script src="contact-us.js"></script>
+  <!-- Linking to your JS file -->
+  <script src="index.js"></script>
 </body>
 </html>

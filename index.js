@@ -16,13 +16,13 @@ class SiteHeader extends HTMLElement {
         <nav>
           <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#showroom">Showroom</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact US</a></li>
           </ul>
         </nav>
 
         <div class="header-actions">
-          <button class="btn-red" onclick="window.location.href='contact.html'">Book Drive</button>
+          <button class="btn-red" onclick="window.location.href='#'">Login</button>
         </div>
       </header>
     `;
@@ -77,7 +77,7 @@ class SiteFooter extends HTMLElement {
           <div class="footer-col">
             <h4>Support</h4>
             <ul>
-              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
               <li><a href="#">Financing</a></li>
             </ul>
           </div>
